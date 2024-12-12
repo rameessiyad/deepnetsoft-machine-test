@@ -1,7 +1,11 @@
-import Routing from "./routing/Routing";
+import Header from "./components/Header";
 
 const App = () => {
-  return <Routing />;
+  return (
+    <>
+      <Header />
+    </>
+  );
 };
 
 export default App;

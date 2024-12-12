@@ -56,7 +56,7 @@ const Header: React.FC = () => {
           className={`
             md:flex md:space-x-10 
             ${isMenuOpen ? "block" : "hidden"} 
-            absolute md:relative top-24 left-0 w-full md:w-auto bg-black md:bg-transparent text-center md:text-left
+            absolute md:relative ${isMenuOpen ? "top-24" : "top-0"} left-0 w-full md:w-auto bg-black md:bg-transparent text-center md:text-left
           `}
         >
           <Link

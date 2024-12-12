@@ -69,7 +69,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="mt-8 text-center flex pt-16 justify-between">
+        <div className="mt-8 text-center flex pt-16 justify-between  flex-col md:flex-row">
           <p className="text-sm text-gray-500">
             © 2024 Deepnetsoft Solutions. All rights reserved.
           </p>

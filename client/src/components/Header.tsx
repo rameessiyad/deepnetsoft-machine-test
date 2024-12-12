@@ -8,7 +8,6 @@ const Header: React.FC = () => {
   return (
     <header className="bg-black text-white p-2">
       <div className="max-w-7xl mx-auto flex items-center justify-between pt-6">
-        {/* Logo */}
         <div className="flex items-center justify-center w-full md:w-auto">
           <Link to="/" className="flex items-center">
             <img src={LogoImg} alt="logo" className="h-16 md:h-20" />
@@ -19,7 +18,6 @@ const Header: React.FC = () => {
           </Link>
         </div>
 
-        {/* Hamburger Menu (Visible on small screens) */}
         <div className="md:hidden">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -51,12 +49,11 @@ const Header: React.FC = () => {
           </button>
         </div>
 
-        {/* Navigation Links */}
         <nav
           className={`
             md:flex md:space-x-10 
             ${isMenuOpen ? "block" : "hidden"} 
-            absolute md:relative ${isMenuOpen ? "top-24" : "top-0"} left-0 w-full md:w-auto bg-black md:bg-transparent text-center md:text-left
+            absolute md:relative ${isMenuOpen ? "top-24 z-20" : "top-0"} left-0 w-full md:w-auto bg-black md:bg-transparent text-center md:text-left
           `}
         >
           <Link

@@ -11,7 +11,7 @@ const Header: React.FC = () => {
         {/* Logo */}
         <div className="flex items-center justify-center w-full md:w-auto">
           <Link to="/" className="flex items-center">
-            <img src={LogoImg} alt="logo" className="h-12 md:h-20" />
+            <img src={LogoImg} alt="logo" className="h-16 md:h-20" />
             <h1 className="md:text-3xl hidden md:block font-semibold ml-2">
               <span className="text-blue-500">DEEP </span>NET{" "}
               <span className="text-gray-400">SOFT</span>
@@ -56,7 +56,7 @@ const Header: React.FC = () => {
           className={`
             md:flex md:space-x-10 
             ${isMenuOpen ? "block" : "hidden"} 
-            absolute md:relative top-20 left-0 w-full md:w-auto bg-black md:bg-transparent text-center md:text-left
+            absolute md:relative top-24 left-0 w-full md:w-auto bg-black md:bg-transparent text-center md:text-left
           `}
         >
           <Link

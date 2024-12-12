@@ -1,11 +1,16 @@
-import Banner from "./components/Banner";
+import { Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
+import MenuPage from "./pages/MenuPage";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
     <>
       <Header />
-      <Banner />
+      <Routes>
+        <Route path="/menu" element={<MenuPage />} />
+      </Routes>
+      <Footer />
     </>
   );
 };

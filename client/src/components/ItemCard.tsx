@@ -5,7 +5,7 @@ const ItemCard: React.FC<MenuItem> = ({ name, description, price }) => {
   return (
     <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300">
       <img
-        src="https://via.placeholder.com/150" 
+        src="https://via.placeholder.com/150" // Replace with the actual image URL
         alt={name}
         className="w-full h-40 object-cover rounded-t-lg"
       />

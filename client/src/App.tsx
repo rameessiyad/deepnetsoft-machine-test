@@ -1,18 +1,24 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Header from "./components/Header";
 import MenuPage from "./pages/MenuPage";
 import Footer from "./components/Footer";
-import CreateMenuPage from "./pages/createPage";
+import AdminPage from "./admin/AdminPage";
+import AddMenuForm from "./admin/AddMenuForm";
 
 const App = () => {
+  const location = useLocation();
+
+  const isAdminRoute = location.pathname.startsWith("/admin");
+
   return (
     <>
-      <Header />
+      {!isAdminRoute && <Header />}
       <Routes>
         <Route path="/" element={<MenuPage />} />
-        <Route path="/create" element={<CreateMenuPage />} />
+        <Route path="/admin" element={<AdminPage />} />
+        <Route path="/admin/add-menu" element={<AddMenuForm />} />
       </Routes>
-      <Footer />
+      {!isAdminRoute && <Footer />}
     </>
   );
 };

@@ -1,6 +1,7 @@
+import Routing from "./routing/Routing";
 
 const App = () => {
-  return <div className="bg-red-500">App</div>;
+  return <Routing />;
 };
 
 export default App;

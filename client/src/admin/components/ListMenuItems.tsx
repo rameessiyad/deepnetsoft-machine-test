@@ -61,9 +61,10 @@ const ListMenuItems = () => {
       }
 
       const newItem = await response.json();
-      setMenuItems((prev) => [...prev, newItem]); // Update the list with the new item
-      setShowForm(false); // Hide the form after submission
-      setFormData({ name: "", description: "", price: "" }); // Reset the form
+      setMenuItems((prev) => [...prev, newItem]);
+      setShowForm(false);
+      setFormData({ name: "", description: "", price: "" });
+      navigate("/admin");
     } catch (error) {
       console.error("Error adding menu item:", error);
       setError("Failed to add menu item. Please try again later.");

@@ -53,7 +53,7 @@ const Banner: React.FC = () => {
             {menus.map((menu) => (
               <button
                 key={menu._id}
-                className={`menu-btn ${
+                className={`menu-btn my-4 ${
                   selectedMenuId === menu._id ? "bg-blue-600" : ""
                 }`}
                 onClick={() => handleMenuClick(menu._id)}

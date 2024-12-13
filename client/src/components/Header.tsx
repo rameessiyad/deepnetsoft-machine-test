@@ -57,29 +57,36 @@ const Header: React.FC = () => {
           `}
         >
           <Link
-            to="/food"
+            to="/"
             className="block py-2 text-lg hover:text-blue-500 md:py-0"
           >
             HOME
           </Link>
           <Link
-            to="/drinks"
+            to="/"
             className="block py-2 text-lg hover:text-blue-500 md:py-0"
           >
             MENU
           </Link>
           <Link
-            to="/brunch"
+            to="/"
             className="block py-2 text-lg hover:text-blue-500 md:py-0"
           >
             MAKE A RESERVATION
           </Link>
           <Link
-            to="/brunch"
+            to="/"
             className="block py-2 text-lg hover:text-blue-500 md:py-0"
           >
             CONTACT US
           </Link>
+          <Link
+            to="/admin"
+            className="block py-2 text-lg hover:text-blue-500 md:py-0"
+          >
+            CREATE
+          </Link>
+         
         </nav>
       </div>
     </header>

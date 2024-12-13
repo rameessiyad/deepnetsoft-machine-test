@@ -49,7 +49,7 @@ const Banner: React.FC = () => {
             If you'd like to place an order, use the "Order Online" button
             located below the menu.
           </p>
-          <div className="flex flex-wrap justify-center items-center space-y-4 space-x-4 mt-4">
+          <div className="flex flex-wrap justify-center space-y-4 space-x-4 mt-4">
             {menus.map((menu) => (
               <button
                 key={menu._id}
